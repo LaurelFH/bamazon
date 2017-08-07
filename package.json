@@ -1,0 +1,26 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "An application that recreates an Amazon-like storefront using Node.JS and MySQL",
+  "main": "customer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaurelFH/bamazon.git"
+  },
+  "keywords": [
+    "bamazon"
+  ],
+  "author": "LFH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaurelFH/bamazon/issues"
+  },
+  "homepage": "https://github.com/LaurelFH/bamazon#readme",
+  "dependencies": {
+    "inquirer": "^3.2.1",
+    "mysql": "^2.14.1"
+  }
+}
