@@ -46,12 +46,24 @@ function whatToBuy(){
 				name:"itemNum",
 				type:"input",
 				message: "What is your item's ID?",
+				validate: function(value){
+					if(isNaN(value) === false){
+						return true;
+					}
+					return false;
+				}
 			},
 
 			{
 				name:"amount",
 				type:"input",
 				message: "How many would you like to buy?",
+				validate: function(value){
+					if(isNaN(value) === false){
+						return true;
+					}
+					return false;
+				}
 				
 			}
 			// ,
@@ -122,7 +134,6 @@ function readAllProducts(){
 		// connection.end();
 	});
 }
-
 
 
 
