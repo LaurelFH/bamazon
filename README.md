@@ -1,14 +1,20 @@
-#Welcome to the Repo for Bamazon
-
+# Welcome to the Repo for Bamazon
+----
 Thank you for downloading this easy to use application 
 
-##Getting Started with Bamazon 
+## Getting Started with Bamazon 
 
 
 
-###What Bamazon Requires
+----
+### What Bamazon Requires
 
-###Installation 
+
+----
+### Installation 
+
+----
+## Built With
 
 
-##Built With 
+## Upcoming Features 

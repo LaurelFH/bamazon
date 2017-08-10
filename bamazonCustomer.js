@@ -20,3 +20,4 @@ var connection = require('./key.js');
 //https://stackoverflow.com/questions/22348705/best-way-to-store-db-config-in-node-js-express-app
 //https://www.periscopedata.com/blog/how-to-format-numbers-as-currency-in-postgres-mysql-and-redshift.html
 //https://www.mysqldatatypes.com/#numeric
+//http://markdownlivepreview.com/
