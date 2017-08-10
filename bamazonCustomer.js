@@ -87,7 +87,7 @@ function whatToBuy(){
 			//query to be sure the database has the item in stock 
 			connection.query("SELECT stock_quantity FROM products WHERE item_id=" + response.itemNum, function (error, data){
 				//now should read the stock_quantity of the item_id from above
-				console.log(data);
+				// console.log(data);
 				if (error) throw error;
 				//if not an error, then see if the data from the query is greater than the response.amount
 					if(data >= response.amount){
@@ -109,13 +109,15 @@ function whatToBuy(){
 									totalPrice = response.amount * newPrice;
 									console.log("You ordered: " + response.amount);
 									console.log("Your total is: $" + totalPrice);
-								console.log("Thank you for using Bamazon!");
+								console.log("Thank you for using Bamazon! Make your next purchase below!");
+								whatToBuy();
 								})
 							})
 					}	
 					else
 					{
 						console.log("There was not enough stock; please try your purchase again with another item.");
+						connection.end();
 					}
 
 				})
