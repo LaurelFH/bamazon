@@ -5,7 +5,6 @@ CREATE DATABASE bamazon_db;
 
 USE bamazon_db;
 
-
 CREATE TABLE IF NOT exists products(
 
 	item_id INT auto_increment NOT NULL,
