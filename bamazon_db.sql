@@ -35,4 +35,17 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 INSERT INTO products (product_name, department_name, price, stock_quantity)
  VALUES("silver ring", "accessories", 200.00, 2);
 
-SELECT *from bamazon_db;
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+ VALUES("princess puppet", "toy", 50.00, 3);
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+ VALUES("pink wig", "beauty", 75.00, 2);
+
+ INSERT INTO products (product_name, department_name, price, stock_quantity)
+ VALUES("stuffed cow", "toy", 5.00, 1);
+
+ INSERT INTO products (product_name, department_name, price, stock_quantity)
+ VALUES("sports car", "toy", 500.00, 3);
+
+
+SELECT * FROM bamazon_db;
