@@ -1,4 +1,7 @@
-CREATE DATABASE IF NOT exists bamazon_db;
+/*CREATE DATABASE IF NOT exists bamazon_db;*/
+DROP DATABASE if exists bamazon_db;
+
+CREATE DATABASE bamazon_db;
 
 USE bamazon_db;
 
@@ -6,10 +9,10 @@ USE bamazon_db;
 CREATE TABLE IF NOT exists products(
 
 	item_id INT auto_increment NOT NULL,
-	product_name VARCHAR(50) NULL,
-	department_name VARCHAR (50) NULL, 
-	price DECIMAL (10, 2) NULL,
-	stock_quantity INT (10) NULL,
+	product_name VARCHAR(50) NOT NULL unique,
+	department_name VARCHAR (50) NOT NULL, 
+	price DECIMAL (10, 2) NOT NULL,
+	stock_quantity INT (10) NOT NULL,
 	primary key (item_id)
 
 );
@@ -32,6 +35,5 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
  VALUES("silver ring", "accessories", 200.00, 2);
-
 
 SELECT *from bamazon_db;
