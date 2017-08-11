@@ -15,8 +15,9 @@ var connection = mysql.createConnection({
 
 connection.connect(function(error){
 	if (error) throw error;
-	whatToBuy();
 	readAllProducts();
+	whatToBuy();
+	
 	
 });
 
