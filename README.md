@@ -35,5 +35,5 @@ This repo includes the items you will need to get up and running with our applic
 ----
 ## Upcoming Features 
 
-Please look forward to our next release of the Bamazon app, in which will include: 
+Please look forward to our next release of the Bamazon app which will include: 
 * increased functionality at both Manager and Supervisor-levels

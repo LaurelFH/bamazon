@@ -86,11 +86,11 @@ function whatToBuy(){
 			
 			//query to be sure the database has the item in stock 
 			connection.query("SELECT stock_quantity FROM products WHERE item_id=" + response.itemNum, function (error, data){
-				//now should read the stock_quantity of the item_id from above
+				//returns the stock_quantity of the item_id from above as data
 				// console.log(data);
 				if (error) throw error;
 				//if not an error, then see if the data from the query is greater than the response.amount
-					if(data >= response.amount){
+					if(data.stock_quantity  >= response.amount){
 						console.log("You are in luck; enjoy your item!");
 						//update the amount of product left in the stock_quantity column
 						//query to update the database to make sure the amount of stock_quantity goes down by the response.amount
@@ -117,7 +117,7 @@ function whatToBuy(){
 					else
 					{
 						console.log("There was not enough stock; please try your purchase again with another item.");
-						connection.end();
+						whatToBuy();
 					}
 
 				})
