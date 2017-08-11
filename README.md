@@ -24,6 +24,9 @@ This repo includes the items you will need to get up and running with our applic
 				$node bamazonCustomer.js
 				```
 5.  From there, you will answer a series of questions based on the items you would like to purchase.  After the current catalogue is displayed, use the arrow keys to answer the first question about your item's name, then type in your item's item ID, a unqiue number tied to this item, and the quantity you would  like to order.  Please be aware that if no stock remains, we will be unable to complete your order.  
+![Placing Your Orders]()
+
+
 
 ----
 ## Upcoming Features 
