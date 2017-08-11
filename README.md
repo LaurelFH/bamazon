@@ -19,6 +19,10 @@ This repo includes the items you will need to get up and running with our applic
  * MySQL [Download the MySQL package](https://www.npmjs.com/package/mysql)
  * Inquirer [Download the Inquirer package](https://www.npmjs.com/package/inquirer)
 3.  Update the **bamazon_db.sql** file to include the password for your own localhost connection in MySQL Workbench;  **this is a crucial step to ensure that you are able to gain access to the Bamazon Database**.  Included in the repo is also a test file "productlist.csv" to populate this database with our most recent offerings if you choose to rely on MySQL's import external file feature.  
+
+![Updating Your Password]()
+
+
 4. Once you confirm that the Bamazon Database is running in MySQL, you can call the "bamazonCustomer.js" file in node:
 				```
 				$node bamazonCustomer.js
