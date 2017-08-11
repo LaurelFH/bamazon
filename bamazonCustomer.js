@@ -88,9 +88,11 @@ function whatToBuy(){
 			connection.query("SELECT stock_quantity FROM products WHERE item_id=" + response.itemNum, function (error, data){
 				//returns the stock_quantity of the item_id from above as data
 				// console.log(data);
+				// console.log(response.amount);
+				// console.log(data[0].stock_quantity);
 				if (error) throw error;
 				//if not an error, then see if the data from the query is greater than the response.amount
-					if(data.stock_quantity  >= response.amount){
+					if(data[0].stock_quantity  >= response.amount){
 						console.log("You are in luck; enjoy your item!");
 						//update the amount of product left in the stock_quantity column
 						//query to update the database to make sure the amount of stock_quantity goes down by the response.amount
@@ -132,8 +134,12 @@ function readAllProducts(){
 		if(error) throw error;
 		console.log("\nCheck out the newest additions to the Bamazon catalogue below:");
 		//if no error show the products
-		console.log(result);
+		for(var i = 0; i< result.length; i++){
+			console.log("New product: " + result[i].product_name + ", Item ID: " + result[i].item_id, ", Price: $" + result[i].price 
+				+ "\n Department:" + result[i].department_name + ", Remaining Stock: " + result[i].stock_quantity);
+		// console.log(result);
 		// connection.end();
+		}
 	});
 }
 
