@@ -18,9 +18,9 @@ This repo includes the items you will need to get up and running with our applic
 2. Make sure you have downloaded and/or updated the two required npm packages required to run Bamazon (information can be found in the included package.json file in the Bamazon App):
  * MySQL [Download the MySQL package](https://www.npmjs.com/package/mysql)
  * Inquirer [Download the Inquirer package](https://www.npmjs.com/package/inquirer)
-3.  Update the **bamazon_db.sql** file to include the password for your own localhost connection in MySQL Workbench;  **this is a crucial step to ensure that you are able to gain access to the Bamazon Database**.  Included in the repo is also a test file "productlist.csv" to populate this database with our most recent offerings if you choose to rely on MySQL's import external file feature.  
+3.  Update the **bamazonCustomer.js** file to include the password for your own localhost connection in MySQL Workbench;  **this is a crucial step to ensure that you are able to gain access to the Bamazon Database**.  Included in the repo is also a test file "productlist.csv" to populate this database with our most recent offerings if you choose to rely on MySQL's import external file feature.  
 
-![Updating Your Password](https://github.com/LaurelFH/bamazon/blob/master/password.png)
+	![Updating Your Password](https://github.com/LaurelFH/bamazon/blob/master/password.png)
 
 
 4. Once you confirm that the Bamazon Database is running in MySQL, you can call the "bamazonCustomer.js" file in node:
@@ -28,7 +28,7 @@ This repo includes the items you will need to get up and running with our applic
 				$node bamazonCustomer.js
 				```
 5.  From there, you will answer a series of questions based on the items you would like to purchase.  After the current catalogue is displayed, use the arrow keys to answer the first question about your item's name, then type in your item's item ID, a unqiue number tied to this item, and the quantity you would  like to order.  Please be aware that if no stock remains, we will be unable to complete your order.  
-![Placing Your Orders](https://github.com/LaurelFH/bamazon/blob/master/placingorders.gif)
+![Placing Your Orders](https://github.com/LaurelFH/bamazon/blob/master/placingorder.gif)
 
 
 
