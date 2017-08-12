@@ -5,7 +5,7 @@ Thank you for downloading this easy-to-use application
 ## Getting Started with Bamazon ver. 1.0
 ----
 
-Bamazon is an application that allows you to quickly place simple orders from your Node.JS terminal. Built using the tools MySQL, Node.JS and several npms and Javascript, Bamazon is a great way to place small orders for individual items.  We embrace the concept of spontaneity, once the item's inventory is gone it is gone for good (this month). We are currently running our "Comiket Special"-- be among the first 100 customers to email us with the name of the anime based on the clues hidden in our productlist.csv and receive a free Bamazon sticker!
+Bamazon is an application that allows you to quickly place simple orders from your Node.JS terminal. Built using the tools MySQL, Node.JS and several npms and JavaScript, Bamazon is a great way to place small orders for individual items.  We embrace the concept of spontaneity, once the item's inventory is gone it is gone for good (this month). We are currently running our "Comiket Special"-- be among the first 100 customers to email us with the name of the anime based on the clues hidden in our productlist.csv and receive a free Bamazon sticker!
 
 There are only a few simple steps to prepare to set-up Bamazon.
 
@@ -14,7 +14,7 @@ There are only a few simple steps to prepare to set-up Bamazon.
 
 This repo includes the items you will need to get up and running with our application.  Follow the steps below to ensure a smooth  experience:
 
-1. Clone the contents of this repo to your desktop location, be sure you have already downloded MySQL Workbench as well as Node.JS
+1. Clone the contents of this repo to your desktop location, be sure you have already downloaded MySQL Workbench as well as Node.JS
 2. Make sure you have downloaded and/or updated the two required npm packages required to run Bamazon (information can be found in the included package.json file in the Bamazon App):
  * MySQL [Download the MySQL package](https://www.npmjs.com/package/mysql)
  * Inquirer [Download the Inquirer package](https://www.npmjs.com/package/inquirer)
